@@ -12,18 +12,18 @@ namespace AdventOfCode2022
 
         private char getSharedCharFromList(List<string> stringList)
         {
-            foreach(char c in stringList[0])
+            foreach (char c in stringList[0])
             {
                 bool contains = true;
-                foreach(string s in stringList)
+                foreach (string s in stringList)
                 {
-                    if(!s.Contains(c))
+                    if (!s.Contains(c))
                     {
                         contains = false;
                         break;
                     }
                 }
-                if(contains == true)
+                if (contains == true)
                 {
                     return c;
                 }
@@ -33,9 +33,9 @@ namespace AdventOfCode2022
 
         private char getSharedChar(string first, string second)
         {
-            foreach(char c in first)
+            foreach (char c in first)
             {
-                if(second.Contains(c))
+                if (second.Contains(c))
                 {
                     return c;
                 }
@@ -44,12 +44,12 @@ namespace AdventOfCode2022
         }
 
         private int getCharPriority(char a)
-        { 
-            if(a >= 'a' && a <= 'z')
+        {
+            if (a >= 'a' && a <= 'z')
             {
                 return a - 96;
             }
-            if(a >= 'A' && a <= 'Z')
+            if (a >= 'A' && a <= 'Z')
             {
                 return a - 38;
             }
@@ -83,6 +83,6 @@ namespace AdventOfCode2022
             Console.WriteLine("Day3 - 2nd Solution: Total score = " + totalPriority2);
         }
 
-        
+
     }
 }

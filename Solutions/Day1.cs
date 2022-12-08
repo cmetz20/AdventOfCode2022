@@ -6,7 +6,7 @@
         public void PrintResult(string filePath)
         {
             int currentCalorieCount = 0;
-            List<int> calorieList = new List<int>();
+            List<int> calorieList = new();
 
             foreach (string line in System.IO.File.ReadLines(filePath))
             {

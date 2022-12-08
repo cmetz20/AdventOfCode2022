@@ -10,8 +10,8 @@
         /// Rock == 1 bonus pt, Paper == 2 bonus pt, Scissors == 3 bonus pt
         public int GetGameResult(string gameString)
         {
-            int myVal = 0;
-            int opponentVal = 0;
+            int myVal;
+            int opponentVal;
 
             // Turn moves into bonus point vals
             if(gameString.Contains('A'))
